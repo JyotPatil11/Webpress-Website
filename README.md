@@ -1,6 +1,8 @@
 Terraform AWS Infrastructure for WordPress Website
 This Terraform project automates the provisioning of an AWS infrastructure to host a WordPress website. 
+
 Below is an overview of the Terraform configuration defined in the main.tf file:
+
 Provider Configuration: Specifies the AWS provider and sets the region based on the input variable.
 
 VPC Resource: Defines a Virtual Private Cloud (VPC) with the specified CIDR block, enabling DNS support and hostnames.
