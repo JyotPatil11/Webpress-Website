@@ -1,4 +1,4 @@
-Terraform AWS Infrastructure for WordPress Website
+#Terraform AWS Infrastructure for WordPress Website
 This Terraform project automates the provisioning of an AWS infrastructure to host a WordPress website. 
 
 Below is an overview of the Terraform configuration defined in the main.tf file:
