@@ -1,52 +1,64 @@
 <h1> Terraform AWS Infrastructure for WordPress Website <h1>
 
-<h2>
-.
-├── main.tf
-├── variables.tf
-├── terraform.tfvars
-├── provider.tf
-├── modules
-│ ├── vpc
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ ├── subnets
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ ├── internet_gateway
-│ │ ├── main.tf
-│ │ └── outputs.tf
-│ ├── route_table
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ ├── security_groups
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ ├── db_instance
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ ├── launch_template
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ ├── elb
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ ├── route53
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ └── autoscaling_group
-│ ├── main.tf
-│ ├── variables.tf
-│ └── outputs.tf
+<h1>
 
+## Description of Files and Directories
+
+- **main.tf**: The main Terraform configuration file.
+- **variables.tf**: File declaring the variables used in the root module.
+- **terraform.tfvars**: File providing values for the declared variables.
+- **provider.tf**: File specifying the provider configuration (e.g., AWS).
+
+### Modules
+
+- **vpc**
+  - `main.tf`: Terraform configuration for VPC.
+  - `variables.tf`: Variables specific to the VPC module.
+  - `outputs.tf`: Outputs from the VPC module.
+
+- **subnets**
+  - `main.tf`: Terraform configuration for subnets.
+  - `variables.tf`: Variables specific to the subnets module.
+  - `outputs.tf`: Outputs from the subnets module.
+
+- **internet_gateway**
+  - `main.tf`: Terraform configuration for Internet Gateway.
+  - `outputs.tf`: Outputs from the Internet Gateway module.
+
+- **route_table**
+  - `main.tf`: Terraform configuration for route tables.
+  - `variables.tf`: Variables specific to the route tables module.
+  - `outputs.tf`: Outputs from the route tables module.
+
+- **security_groups**
+  - `main.tf`: Terraform configuration for security groups.
+  - `variables.tf`: Variables specific to the security groups module.
+  - `outputs.tf`: Outputs from the security groups module.
+
+- **db_instance**
+  - `main.tf`: Terraform configuration for the database instance.
+  - `variables.tf`: Variables specific to the database instance module.
+  - `outputs.tf`: Outputs from the database instance module.
+
+- **launch_template**
+  - `main.tf`: Terraform configuration for the launch template.
+  - `variables.tf`: Variables specific to the launch template module.
+  - `outputs.tf`: Outputs from the launch template module.
+
+- **elb**
+  - `main.tf`: Terraform configuration for the ELB.
+  - `variables.tf`: Variables specific to the ELB module.
+  - `outputs.tf`: Outputs from the ELB module.
+
+- **route53**
+  - `main.tf`: Terraform configuration for Route 53.
+  - `variables.tf`: Variables specific to the Route 53 module.
+  - `outputs.tf`: Outputs from the Route 53 module.
+
+- **autoscaling_group**
+  - `main.tf`: Terraform configuration for the Auto Scaling Group.
+  - `variables.tf`: Variables specific to the Auto Scaling Group module.
+  - `outputs.tf`: Outputs from the Auto Scaling Group module.
 
 </h2>
 
