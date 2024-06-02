@@ -7,31 +7,48 @@
 ├── terraform.tfvars
 ├── provider.tf
 ├── modules
-│   ├── vpc
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │  
-│   ├── subnets
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   ├── internet_gateway
-│   │   ├── main.tf
-│   │   └── outputs.tf
-│   ├── route_table
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   ├── security_groups
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   ├── db_instance
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│
+│ ├── vpc
+│ │ ├── main.tf
+│ │ ├── variables.tf
+│ │ └── outputs.tf
+│ ├── subnets
+│ │ ├── main.tf
+│ │ ├── variables.tf
+│ │ └── outputs.tf
+│ ├── internet_gateway
+│ │ ├── main.tf
+│ │ └── outputs.tf
+│ ├── route_table
+│ │ ├── main.tf
+│ │ ├── variables.tf
+│ │ └── outputs.tf
+│ ├── security_groups
+│ │ ├── main.tf
+│ │ ├── variables.tf
+│ │ └── outputs.tf
+│ ├── db_instance
+│ │ ├── main.tf
+│ │ ├── variables.tf
+│ │ └── outputs.tf
+│ ├── launch_template
+│ │ ├── main.tf
+│ │ ├── variables.tf
+│ │ └── outputs.tf
+│ ├── elb
+│ │ ├── main.tf
+│ │ ├── variables.tf
+│ │ └── outputs.tf
+│ ├── route53
+│ │ ├── main.tf
+│ │ ├── variables.tf
+│ │ └── outputs.tf
+│ └── autoscaling_group
+│ ├── main.tf
+│ ├── variables.tf
+│ └── outputs.tf
 
-<h/2>
+
+</h2>
 
 This Terraform project automates the provisioning of an AWS infrastructure to host a WordPress website. 
 
