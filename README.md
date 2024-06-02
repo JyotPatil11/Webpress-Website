@@ -1,4 +1,37 @@
-<h1>Terraform AWS Infrastructure for WordPress Website</h1>
+<h1> Terraform AWS Infrastructure for WordPress Website <h1>
+
+<h2>
+.
+├── main.tf
+├── variables.tf
+├── terraform.tfvars
+├── provider.tf
+├── modules
+│   ├── vpc
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │  
+│   ├── subnets
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── internet_gateway
+│   │   ├── main.tf
+│   │   └── outputs.tf
+│   ├── route_table
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── security_groups
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── db_instance
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│
+
+<h/2>
 
 This Terraform project automates the provisioning of an AWS infrastructure to host a WordPress website. 
 
